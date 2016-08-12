@@ -19,5 +19,5 @@ The following is part of the demo:
 ```
 cd $HOME
 git clone https://github.com/dmaier-couchbase/cbl-syncgwint-demo.git
-docker build cbl-syncgwint-demo
+docker build cbl-syncgwint-demo/
 ```
