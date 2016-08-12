@@ -11,7 +11,7 @@ RUN env
 RUN echo 'Downloading demo source code ...'
 RUN sudo apt-get update
 RUN sudo apt-get --assume-yes install git
-RUN cd $WORKDIR;git clone $REPO/$PROJECT.git
+RUN git clone $REPO/$PROJECT.git $WORKDIR/$PROJECT
 
 RUN echo 'Executing demo setup ...'
 RUN $WORKDIR/$PROJECT/scripts/pre-install.bash
