@@ -17,6 +17,7 @@ The following is part of the demo:
 ## Setup
 
 ```
-git clone ${this repo}
-docker bui
+cd $HOME
+git clone https://github.com/dmaier-couchbase/cbl-syncgwint-demo.git
+docker build cbl-syncgwint-demo
 ```
