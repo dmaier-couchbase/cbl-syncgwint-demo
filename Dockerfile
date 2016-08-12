@@ -14,9 +14,9 @@ RUN sudo apt-get --assume-yes install git
 RUN cd $WORKDIR;git clone $REPO/$PROJECT.git
 
 RUN echo 'Executing demo setup ...'
-RUN $WORKDIR/$PROJECT/pre-install.bash
-RUN $WORKDIR/$PROJECT/install.bash
-RUN $WORKDIR/$PROJECT/post-install.bash
+RUN $WORKDIR/$PROJECT/scripts/pre-install.bash
+RUN $WORKDIR/$PROJECT/scripts/install.bash
+RUN $WORKDIR/$PROJECT/scripts/post-install.bash
 
 RUN echo 'Starting demo ...'
-RUN $WORKDIR/$PROJECT/run.bash
+RUN $WORKDIR/$PROJECT/scripts/run.bash
